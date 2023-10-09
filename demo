@@ -1,0 +1,11 @@
+<div id="HomeComponent">
+                <NavigationComponent />
+
+                <img src="https://cdn-icons-png.flaticon.com/128/5087/5087579.png" className="my-2" alt="Image not found" width="200" height="200"></img>
+
+
+  <div id="LoginComponent">
+                <NavigationComponent />
+               
+                <img src="https://png.pngtree.com/png-vector/20191110/ourmid/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg " 
+                 className="my-2" alt="Image not found" width="200" height="200"></img>
