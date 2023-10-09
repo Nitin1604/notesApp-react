@@ -1,4 +1,4 @@
-// App.js is the entrance for React Router in react js.
+// App.js is the entrance for React Router in react js.  
 import './App.css';
 import RouterConfig from './Components/RouterConfig';
 
