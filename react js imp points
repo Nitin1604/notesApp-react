@@ -14,3 +14,5 @@ return (
 Follow these steps in all react app browser tab and the title will change
 To Change the react-app icon in the browser tab just change the file name of image to favicon.ico 
 then the icon of react-app will be change...
+
+To install any hook in react js you must write this line of command to install any hook "npm install hook name"
