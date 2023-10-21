@@ -46,8 +46,8 @@ const notesComponent = () => {
                                 <div className="text-white rounded">
                                     <div className="px-0" style={myStyle}>
                                         <h1 className="display-4 font-italic">What are the features of NotesApp?</h1>
-                                        <p className="lead my-3">It can add the notes, edit the notes , delete the notes</p>
-                                        <p className="lead mb-0"><a className="text-white font-weight-bold">Continue reading...</a></p>
+                                        <p className="lead my-3">It can add the notes, edit the notes , delete the notes and lock the notes such that no one can access the notes when trying to open the notes.</p>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -65,35 +65,35 @@ const notesComponent = () => {
                                         <p className="blog-post-meta">NotesApp created by <a href="#">Nitin</a></p>
 
                                         <h3 className="text-success">Add images and photos</h3>
-                                        <b><p>Upload images and photos as part of your notes. Notud allows you to mark them up with text, arrows or images.</p></b>
+                                        <b><p className="text-secondary">Upload images and photos as part of your notes. Notud allows you to mark them up with text, arrows or images.</p></b>
                                         <h3 className="text-danger">Safe and secure </h3>
                                         <blockquote>
-                                            <b><p>Secure and encrypted notes and client information routinely backed up. GDPR Compliant.</p></b>
+                                            <b><p className="text-success">Secure and encrypted notes and client information routinely backed up. GDPR Compliant.</p></b>
                                         </blockquote>
 
                                         <h3 className="text-info">Remote cloud access</h3>
-                                        <b><p>Securely  access your important documents and client files wherever you are.</p></b>
+                                        <b><p className="text-secondary">Securely  access your important documents and client files wherever you are.</p></b>
 
                                         <h2 className="text-danger">Integrated</h2>
-                                        <b><p>Integrate Notud with Xero or Zapier to simplify your workflow and automate your business tasks.</p></b>
+                                        <b><p className="text-primary">Integrate Notud with Xero or Zapier to simplify your workflow and automate your business tasks.</p></b>
 
                                         <h2 className="text-success">Membership support</h2>
-                                        <b><p>Ongoing support and webinars to help you find a solution when you need one.</p>
+                                        <b><p className="text-info">Ongoing support and webinars to help you find a solution when you need one.</p>
                                         </b>
 
                                         <h2 className="text-secondary">Multi-device</h2>
-                                        <b><p>Access your notes on any device - Apple, Android or Windows - with an active internet connection. No need to download or install an app!</p></b>
+                                        <b><p className="text-success">Access your notes on any device - Apple, Android or Windows - with an active internet connection. No need to download or install an app!</p></b>
                                     </div>
 
                                     <div className="blog-post">
                                         <h2 className="blog-post-title text-danger">Get more out of your NOTES with AI</h2>
 
-                                        <b><p>With AI we can OCR your handwriting and provide a meaningful summary</p></b>
+                                        <b><p className="text-success">With AI we can OCR your handwriting and provide a meaningful summary</p></b>
                                         <blockquote>
-                                        <b><p>Along with the summary, we can also provide a list of action items. All at your fingertips.</p>
+                                        <b><p className="text-info">Along with the summary, we can also provide a list of action items. All at your fingertips.</p>
                                         </b>
                                         </blockquote>
-                                        <b><p>The perfect easy to use addition to my Xero client database. I can make notes, draw notes and ensure everything is attached to their client file for compliance. A great addition as we continue to transition to a paperless office. So easy to setup and use. </p></b>
+                                        <b><p className="text-primary">The perfect easy to use addition to my Xero client database. I can make notes, draw notes and ensure everything is attached to their client file for compliance. A great addition as we continue to transition to a paperless office. So easy to setup and use. </p></b>
                                     </div>
 
 
