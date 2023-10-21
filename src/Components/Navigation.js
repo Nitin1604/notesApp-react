@@ -21,7 +21,7 @@ const NavigationComponent = () => {
                                 <a className="nav-link active" aria-current="page" href="/about">About</a>
                             </li>
 
-                            {/* Navigation for Contact Components */}
+                            {/* Navigation for notesBlog Components */}
                             <li className="nav-item">
                                 <a className="nav-link active" aria-current="page" href="/notesBlog">Blog</a>
                             </li>
