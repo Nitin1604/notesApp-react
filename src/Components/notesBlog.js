@@ -8,7 +8,6 @@ const myStyle = {
         "url('https://source.unsplash.com/random?wallpapers')" ,
     height: '387px',
     padding: '80px',
-    // width: '492px',
     marginTop: -'23px',
     fontSize: '50px',
     backgroundRepeat: 'no-repeat',
