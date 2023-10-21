@@ -28,27 +28,34 @@ const LoginComponent = () => {
                             <h1 className="h-primary center text-success">Login with your number</h1>
                             <div id="contact-box">
                                 <form action="">
+
+                                    {/* form-group for "Name" */}
                                     <div className="form-group">
                                         <b><label htmlFor="name" className="text-success">Name: </label></b>
                                         <input type="text" name="name" id="name" placeholder="Enter your name" className="text-success" />
                                     </div>
+                                    {/* form-group for "Name" */}
+
+                                    {/* form-group for "Email"  */}
                                     <div className="form-group">
                                         <b><label htmlFor="email" className="text-success">Email: </label></b>
                                         <input type="email" name="name" id="email" placeholder="Enter your email" className="text-success" />
                                     </div>
+                                    {/* form-group for "Email"  */}
+
+                                    {/* form-group for "Phone Number" */}
                                     <div className="form-group">
                                         <b><label htmlFor="phone" className="text-success">Phone Number: </label></b>
                                         <input type="phone" name="name" id="phone" placeholder="Enter your phone" className="text-success" />
                                     </div>
+                                    {/* form-group for "Phone Number" */}
 
+                                    {/* container class for "Login" button */}
                                     <div className="container">
                                         <button className="btn btn-success" style={{ borderRadius: '16px', width: '416px', }}>Login</button>
-                                        {/* 
-                                            border-radius: 16px;
-                                             overflow: hidden;
-                                            width: 416px;
-                                        */}
                                     </div>
+                                    {/* container class for "Login" button */}
+
                                 </form>
                             </div>
                         </section>
