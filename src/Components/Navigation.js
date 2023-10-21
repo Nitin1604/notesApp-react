@@ -21,10 +21,16 @@ const NavigationComponent = () => {
                                 <a className="nav-link active" aria-current="page" href="/about">About</a>
                             </li>
 
-                            {/* Navigation for Contact Us Components */}
+                            {/* Navigation for Contact Components */}
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/contact">Contact Us</a>
+                                <a className="nav-link active" aria-current="page" href="/notesBlog">Blog</a>
                             </li>
+
+                            {/* Navigation for Login Components */}
+                            <li className="nav-item">
+                                <a className="nav-link active" aria-current="page" href="/login">Login</a>
+                            </li>
+                            
                         </ul>
                     </div>
                 </div>

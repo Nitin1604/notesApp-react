@@ -3,7 +3,8 @@ import { Route, BrowserRouter, Routes } from "react-router-dom"; // This is the 
 import LoginComponent from "./login";
 import HomeComponent from "./home";
 import AboutComponent from "./About";
-import ContactComponent from "./Contact";
+import NotesComponent from "./notesBlog";
+import LockManager from "./lockScreen";
 import React from 'react';
 
 
@@ -13,11 +14,11 @@ const RouterConfig = () => {
         <div id="RouterConfig">
             <BrowserRouter>
                 <Routes>
-                    <Route exact path='/' element={< LoginComponent />} />                 
+                    <Route exact path='/' element={< LockManager />} />                 
+                    <Route exact path='/login' element={< LoginComponent/>} />  
                     <Route exact path='/home' element={< HomeComponent />} />      
                     <Route exact path='/about' element={< AboutComponent />} />      
-                    <Route exact path='/contact' element={< ContactComponent />} />  
-
+                    <Route exact path='/notesBlog' element={< NotesComponent />} />  
                 </Routes>
             </BrowserRouter>
         </div>

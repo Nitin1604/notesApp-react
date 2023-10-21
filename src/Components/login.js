@@ -1,59 +1,58 @@
 import NavigationComponent from "./Navigation";
 import React from 'react';
+import contactLogo from './contactLogo.jpg';
+import { Helmet } from 'react-helmet';
 
-
+const Title = 'Login Page';
 const LoginComponent = () => {
 
     return (
         <>
-           {/* div having id LoginComponent */}
-           <div id="LoginComponent">
+            <Helmet>
+                <title>{Title}</title>
+            </Helmet>
+            {/* div having id LoginComponent */}
+            <div id="LoginComponent">
                 <NavigationComponent />
-               
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT96RSn3ZgHUCAO_R6odc5dB89p7SJJZg7uhw&usqp=CAU" 
-                 className="my-2" alt="Image not found" width="200" height="200"></img>
+
+                <img src={contactLogo}
+                    className="my-2" alt="Image not found" width="200" height="200"></img>
                 {/* container class */}
                 <div className="container my-4">
 
                     {/* div tag having form class */}
                     <div className="form class">
 
-                        <h2>Get your OTP</h2>
-                        
-                        <form>
 
-                            {/* This div tag having class row containg Contact Number and their input field */}
-                            <div className="row my-3">
+                        <section id="contact">
+                            <h1 className="h-primary center text-success">Login with your number</h1>
+                            <div id="contact-box">
+                                <form action="">
+                                    <div className="form-group">
+                                        <b><label htmlFor="name" className="text-success">Name: </label></b>
+                                        <input type="text" name="name" id="name" placeholder="Enter your name" className="text-success" />
+                                    </div>
+                                    <div className="form-group">
+                                        <b><label htmlFor="email" className="text-success">Email: </label></b>
+                                        <input type="email" name="name" id="email" placeholder="Enter your email" className="text-success" />
+                                    </div>
+                                    <div className="form-group">
+                                        <b><label htmlFor="phone" className="text-success">Phone Number: </label></b>
+                                        <input type="phone" name="name" id="phone" placeholder="Enter your phone" className="text-success" />
+                                    </div>
 
-                                {/* Contact Number */}
-                                <div className="col">
-                                    <label htmlFor="exampleInputEmail1">Contact Number</label>
-                                </div>
-                                {/* Contact Number */}
-
-                                {/* Contact Number input field */}
-                                <div className="col-6">
-                                    <input type="text" className="form-control" id="exampleInputEmail1" placeholder="Enter your contact number" />
-                                </div>
-                                {/* Contact Number input field */}
-
+                                    <div className="container">
+                                        <button className="btn btn-success" style={{ borderRadius: '16px', width: '416px', }}>Login</button>
+                                        {/* 
+                                            border-radius: 16px;
+                                             overflow: hidden;
+                                            width: 416px;
+                                        */}
+                                    </div>
+                                </form>
                             </div>
-                            {/* This div tag having class row containing Contact Number and their input field */}
+                        </section>
 
-                            {/* form-group containing Password, its input field and login button */}
-                            <div className="form-group">
-
-                                {/* Login button */}
-                                <div className="my-2">
-                                    <button type="login" className="btn btn-danger col-sm-3 my-2 mx-1">Send OTP</button>
-                                </div>
-                                {/* Login button */}
-
-                            </div>
-                             {/* form-group containing Password, its input field and login button */}
-
-                        </form>
-                        
                     </div>
                     {/* div tag having form class */}
 
