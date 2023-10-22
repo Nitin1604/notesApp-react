@@ -2,8 +2,6 @@ import NavigationComponent from "./Navigation";
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-
-
 const Title = 'About Us';
 
 const AboutComponent = () => {
