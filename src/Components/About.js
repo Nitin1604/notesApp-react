@@ -2,6 +2,8 @@ import NavigationComponent from "./Navigation";
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
+
+
 const Title = 'About Us';
 
 const AboutComponent = () => {
@@ -13,8 +15,8 @@ const AboutComponent = () => {
             </Helmet>
             <div id="AboutComponent">
                 <NavigationComponent />
-                <div className="content">
-                    <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+                <div className="content" >
+                    <div className="position-relative p-3 p-md-5 m-md-3 text-center" >
                         <div className="col-md-5 p-lg-5 mx-auto my-5">
                             <h1 className="display-4 font-weight-normal text-danger">NotesApp</h1>
                             <p className="lead font-weight-normal text-white mt-2 mb-3 btn btn-info" title="NotesApp have too much features">
