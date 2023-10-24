@@ -45,14 +45,15 @@
 }
 
 /* Contact Page design */
-#contact-box form{
-  width:80%;
+#contact-box form {
+  width: 80%;
 }
 
-#contact{
+#contact {
   position: relative;
 }
-#contact::before{
+
+#contact::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -61,35 +62,121 @@
   opacity: 0.7;
 
 }
-#contact-box{
+
+#contact-box {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 34px;
 }
-#contact-box input, 
-#contact-box textarea{
+
+#contact-box input,
+#contact-box textarea {
   width: 100%;
   padding: 0.5rem;
   border-radius: 9px;
-  font-size: 1.1rem;
-} 
+  font-size: 21px;
+  font-weight: 600;
+}
 
-#contact-box form{
+#contact-box form {
   width: 40%;
 }
 
-#contact-box label{
- font-size: 1.3rem;
- font-family: 'Bree Serif', serif;
-
+#contact-box label {
+  font-size: 26px;
+  font-family: 'Bree Serif', serif;
+  font-weight: bold;
 }
 
+#name:hover {
+  color:red;
+}
 /* notesBlog footer */
 .blog-footer {
-  margin-bottom: 1rem!important;
-  background-color: #a3b4bd;
+  margin-bottom: 1rem !important;
+  background-color: #b3ddf4;
   height: 100px;
   padding: 13px;
   border-radius: 100px;
+  border: solid;
+  color: rgb(36, 12, 212);
+}
+
+.blog-footer:hover {
+  background-color: yellow;
+  cursor: pointer;
+  border: 2px solid red;
+  color: red;
+  font-size: 18px;
+}
+
+/* home.js css | OTP having class as my-2 */
+.my-2 {
+  padding: 7px;
+}
+
+/* home.js css | card image */
+.img {
+  height: 205px;
+  width: 323px;
+}
+
+/* login.js css | inputName , inputEmail , inputPhone */
+.inputName,
+.inputEmail,
+.inputPhone {
+  border-color: #20c010;
+}
+
+/* login.js css | hover effect */
+input[type=text]:hover {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  background-color: rgba(241, 241, 64, 0.549);
+  border: 3px solid red;
+  cursor: pointer;
+}
+
+/* .tx-red used in all components */
+.tx-red {
+  color: red;
+  margin-right: 23px;
+}
+
+/* .tx-center used in all components */
+.tx-center {
+  text-align: center;
+  margin-left: 33px;
+  font-size: 20px;
+}
+
+/* login.js | placeholder */
+::placeholder {
+  color: rgba(13, 255, 0, 0.673);
+}
+
+/* login.js | btn btn-success | login button */
+#loginID:hover {
+  background-color: red;
+  border: 2px solid red;
+  font-weight: bold;
+}
+
+/* Creating hover effect on placeholder in login.js file */
+.inputName:hover::placeholder {
+  color: red;
+  font-weight: bold;
+}
+
+.inputEmail:hover::placeholder {
+  color: red;
+  font-weight: bold;
+}
+
+.inputPhone:hover::placeholder {
+  color: red;
+  font-weight: bold;
 }
