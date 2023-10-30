@@ -74,7 +74,7 @@
 #contact-box textarea {
   width: 100%;
   padding: 0.5rem;
-  border-radius: 9px;
+  border-radius: 27px;
   font-size: 21px;
   font-weight: 600;
 }
@@ -103,6 +103,7 @@
   color: rgb(36, 12, 212);
 }
 
+/* .blog-footer class hover effect */
 .blog-footer:hover {
   background-color: yellow;
   cursor: pointer;
