@@ -24,19 +24,19 @@ const HomeComponent = () => {
                                     <h5 className="card-title">Getting OTP</h5>
                                     <form action="">
 
-                                        {/* form-group for Name */}
+                                        {/*<---------------- form-group for Name ---------------->*/}
                                         <div className="form-group">
-                                            <label htmlFor="exampleInputName" className="mx-2">Name:</label>
-                                            <input type="text" className="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter name" />
+                                            <label htmlFor="exampleInputContact" className="mx-2">Contact:</label>
+                                            <input type="text1" className="form-control" id="exampleInputContact" aria-describedby="contactHelp" placeholder="Enter your contact"/>
                                         </div>
-                                        {/* form-group for Name */}
+                                        {/*<---------------- form-group for Name ---------------->*/}
 
-                                        {/* form-group for OTP */}
+                                        {/*<---------------- form-group for OTP ---------------->*/}
                                         <div className="form-group">
                                             <label htmlFor="exampleInputOTP" className="my-3 mx-3">OTP:</label>
-                                            <input type="text" className="form-control" id="exampleInputOTP" placeholder="Enter OTP" />
+                                            <input type="text2" className="form-control" id="exampleInputOTP" placeholder="Enter OTP" />
                                         </div>
-                                        {/* form-group for OTP */}
+                                        {/*<---------------- form-group for OTP ---------------->*/}
 
                                          {/* <------------ Verifying OTP starting ------------>  */}
                                         <button type="submit" className="btn btn-info my-2">Verify OTP</button> 
