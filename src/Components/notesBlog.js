@@ -29,13 +29,13 @@ const notesComponent = () => {
                             <header className="blog-header py-3">
                                 <div className="row flex-nowrap justify-content-between align-items-center">
                                     <div className="col-4 pt-1">
-                                        <a className="text-muted" href="#">Subscribe</a>
+                                        <a className="subscribe" href="#">Subscribe</a>
                                     </div>
                                     <div className="col-4 text-center">
-                                        <a className="blog-header-logo text-dark" href="#">Large</a>
+                                        <a className="large" href="#">Large</a>
                                     </div>
                                     <div className="col-4 pt-1">
-                                        <a className="blog-header-logo text-dark" href="#">Unsubscribe</a>
+                                        <a className="unsubscribe" href="#">Unsubscribe</a>
                                     </div>
 
                                 </div>
@@ -130,7 +130,7 @@ const notesComponent = () => {
                         <footer className="blog-footer my-3">
                             <p>Explore more components of Bootstrap on this site: <a href="https://getbootstrap.com/">Bootstrap.</a></p>
                             <p>
-                                <a href="#" className="btn btn-danger">Back to top</a>
+                                <a href="#" className="btn btn-info">Back to top</a>
                             </p>
                         </footer>
                     </div>
