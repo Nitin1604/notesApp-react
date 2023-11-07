@@ -167,16 +167,20 @@ input[type=text]:hover {
 }
 
 /* Creating hover effect on placeholder in login.js file */
+
+/* Hover effect on inputName class */
 .inputName:hover::placeholder {
   color: red;
   font-weight: bold;
 }
 
+/* Hover effect on inputEmail class */
 .inputEmail:hover::placeholder {
   color: red;
   font-weight: bold;
 }
 
+/* Hover effect on inputPhone class */
 .inputPhone:hover::placeholder {
   color: red;
   font-weight: bold;
