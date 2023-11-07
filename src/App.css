@@ -185,3 +185,21 @@ input[type=text]:hover {
   color: red;
   font-weight: bold;
 }
+
+/* notesBlog.js css */
+.subscribe:hover {
+  color: red;
+  font-size: 18px;
+}
+.large:hover {
+  color: red;
+  font-size: 18px;
+}
+.unsubscribe:hover {
+  color: red;
+  font-size: 18px;
+}
+
+div a {
+  color: black;
+}
