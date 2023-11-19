@@ -190,6 +190,7 @@ input[type=text]:hover {
 .subscribe:hover {
   color: red;
   font-size: 18px;
+  animation-delay: 1s;
 }
 .large:hover {
   color: red;
@@ -202,4 +203,38 @@ input[type=text]:hover {
 
 div a {
   color: black;
+}
+
+/* Navigation.js css */
+#home:hover , #about:hover, #blog:hover, #login:hover {
+  color: rgb(32, 255, 143);
+  position: relative;
+}
+  #home , #about , #blog , #login {
+    display: inline-block;
+    position: relative;
+    color: white;
+  }
+  
+  /* Navbar text hover effect */
+  #home::after, #about::after, #blog::after, #login::after  {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(32, 255, 143);  /* Underline color effect */
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  #home:hover::after, #about:hover::after, #blog:hover:after, #login:hover:after  {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+#notesApp:hover {
+  color:rgb(32, 255, 143);
 }
