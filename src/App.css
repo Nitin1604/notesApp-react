@@ -1,0 +1,240 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* home.js design */
+.form-inline {
+  padding-left: 321px !important;
+  padding-top: 42px !important;
+}
+
+/* Contact Page design */
+#contact-box form {
+  width: 80%;
+}
+
+#contact {
+  position: relative;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+
+}
+
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 27px;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+#contact-box form {
+  width: 40%;
+}
+
+#contact-box label {
+  font-size: 26px;
+  font-family: 'Bree Serif', serif;
+  font-weight: bold;
+}
+
+#name:hover {
+  color:red;
+}
+/* notesBlog footer */
+.blog-footer {
+  margin-bottom: 1rem !important;
+  background-color: #b3ddf4;
+  height: 100px;
+  padding: 13px;
+  border-radius: 100px;
+  border: solid;
+  color: rgb(36, 12, 212);
+}
+
+/* .blog-footer class hover effect */
+.blog-footer:hover {
+  background-color: yellow;
+  cursor: pointer;
+  border: 2px solid red;
+  color: red;
+  font-size: 18px;
+}
+
+/* home.js css | OTP having class as my-2 */
+.my-2 {
+  padding: 7px;
+}
+
+/* home.js css | card image */
+.img {
+  height: 205px;
+  width: 323px;
+}
+
+/* login.js css | inputName , inputEmail , inputPhone */
+.inputName,
+.inputEmail,
+.inputPhone {
+  border-color: #20c010;
+}
+
+/* login.js css | hover effect */
+input[type=text]:hover {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  background-color: rgba(241, 241, 64, 0.549);
+  border: 3px solid red;
+  cursor: pointer;
+}
+
+/* .tx-red used in all components */
+.tx-red {
+  color: red;
+  margin-right: 23px;
+}
+
+/* .tx-center used in all components */
+.tx-center {
+  text-align: center;
+  margin-left: 33px;
+  font-size: 20px;
+}
+
+/* login.js | placeholder */
+::placeholder {
+  color: rgba(13, 255, 0, 0.673);
+}
+
+/* login.js | btn btn-success | login button */
+#loginID:hover {
+  background-color: red;
+  border: 2px solid red;
+  font-weight: bold;
+}
+
+/* Creating hover effect on placeholder in login.js file */
+
+/* Hover effect on inputName class */
+.inputName:hover::placeholder {
+  color: red;
+  font-weight: bold;
+}
+
+/* Hover effect on inputEmail class */
+.inputEmail:hover::placeholder {
+  color: red;
+  font-weight: bold;
+}
+
+/* Hover effect on inputPhone class */
+.inputPhone:hover::placeholder {
+  color: red;
+  font-weight: bold;
+}
+
+/* notesBlog.js css */
+.subscribe:hover {
+  color: red;
+  font-size: 18px;
+  animation-delay: 1s;
+}
+.large:hover {
+  color: red;
+  font-size: 18px;
+}
+.unsubscribe:hover {
+  color: red;
+  font-size: 18px;
+}
+
+div a {
+  color: black;
+}
+
+/* Navigation.js css */
+#home:hover , #about:hover, #blog:hover, #login:hover {
+  color: rgb(32, 255, 143);
+  position: relative;
+}
+  #home , #about , #blog , #login {
+    display: inline-block;
+    position: relative;
+    color: white;
+  }
+  
+  /* Navbar text hover effect */
+  #home::after, #about::after, #blog::after, #login::after  {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(32, 255, 143);  /* Underline color effect */
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  #home:hover::after, #about:hover::after, #blog:hover:after, #login:hover:after  {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+#notesApp:hover {
+  color:rgb(32, 255, 143);
+}
