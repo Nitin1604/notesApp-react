@@ -73,9 +73,6 @@ const LoginComponent = () => {
                                 <div className="form-group">
                                     <b><label htmlFor="Name" className="mx-3 text-success">Contact</label></b>
                                     <input type="text" id="name" name="name" className="col-sm-6 text-primary inputPhone " placeholder="Contact no." value={inputContact} onChange={InputContactMsg} />
-                                    {/* <div>
-                                        {isInvalidContactNumber && <p>Error: Contact number must be 10 digits long.</p>}
-                                    </div> */}
 
                                     {/* Validation Block "Input Contact" will start here */}
                                     <div className="row" hidden={validilityMsgInputContact === ''}>
