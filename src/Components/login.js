@@ -29,7 +29,7 @@ const LoginComponent = () => {
     // function to handle validation
     const validationFunction = (event) => {
         event.preventDefault();
-
+    
         // when inputContact were left blank
         if (inputContact === '') {
             return setInputContactError("You forgot to enter your contact number!!");
@@ -37,16 +37,24 @@ const LoginComponent = () => {
 
         // when inputContact has digits less than 10 , show this error message
         if (inputContact.length < 10) {
-            return setInputContactError("Contact number must be at least 10 digits long.");
+            return setInputContactError("Your entered contact digits is less then 10..");
         }
 
         // When both conditions are satisfied, clearing the error message
         setvalidilityMsgInputContact('');
-
+    
+        const inputValue = event.target.value;
+    
+        if (/^\d*$/.test(inputValue) || inputValue === '') {
+            setInputContact(inputValue);
+            setvalidilityMsgInputContact('');
+        } else {
+            setvalidilityMsgInputContact('Please enter only digits.');
+        }
     };
+        return (
+            <>
 
-    return (
-        <>
         <Helmet>
             <title>{Title}</title>
         </Helmet>
