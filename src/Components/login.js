@@ -43,14 +43,6 @@ const LoginComponent = () => {
         // When both conditions are satisfied, clearing the error message
         setvalidilityMsgInputContact('');
     
-        const inputValue = event.target.value;
-    
-        if (/^\d*$/.test(inputValue) || inputValue === '') {
-            setInputContact(inputValue);
-            setvalidilityMsgInputContact('');
-        } else {
-            setvalidilityMsgInputContact('Please enter only digits.');
-        }
     };
         return (
             <>
