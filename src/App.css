@@ -90,8 +90,9 @@
 }
 
 #name:hover {
-  color:red;
+  color: red;
 }
+
 /* notesBlog footer */
 .blog-footer {
   margin-bottom: 1rem !important;
@@ -103,14 +104,32 @@
   color: rgb(36, 12, 212);
 }
 
-/* .blog-footer class hover effect */
+/* .blog-footer class hover effect for notesBlog.js */
 .blog-footer:hover {
   background-color: yellow;
   cursor: pointer;
   border: 2px solid red;
   color: red;
   font-size: 18px;
+  animation: slide 6s linear;  /* Applying animation */
 }
+
+/* Creating a animation effect on footer */
+.blog-footer {
+  width: 1148px;
+  height: 107px;
+  position: relative;
+}
+
+@keyframes slide {
+  0% {
+    left: 0; /* Starting position */
+  }
+  100% {
+    left: 100px; /* Ending position */
+  }
+}
+
 
 /* home.js css | OTP having class as my-2 */
 .my-2 {
@@ -168,19 +187,11 @@ input[type=text]:hover {
 
 /* Creating hover effect on placeholder in login.js file */
 
-/* Hover effect on inputName class */
 .inputName:hover::placeholder {
   color: red;
   font-weight: bold;
 }
 
-/* Hover effect on inputEmail class */
-.inputEmail:hover::placeholder {
-  color: red;
-  font-weight: bold;
-}
-
-/* Hover effect on inputPhone class */
 .inputPhone:hover::placeholder {
   color: red;
   font-weight: bold;
@@ -192,10 +203,12 @@ input[type=text]:hover {
   font-size: 18px;
   animation-delay: 1s;
 }
+
 .large:hover {
   color: red;
   font-size: 18px;
 }
+
 .unsubscribe:hover {
   color: red;
   font-size: 18px;
@@ -206,35 +219,86 @@ div a {
 }
 
 /* Navigation.js css */
-#home:hover , #about:hover, #blog:hover, #login:hover {
-  color: rgb(32, 255, 143);
+#home:hover,
+#about:hover,
+#blog:hover,
+#login:hover {
+  color: yellow;
   position: relative;
 }
-  #home , #about , #blog , #login {
-    display: inline-block;
-    position: relative;
-    color: white;
-  }
-  
-  /* Navbar text hover effect */
-  #home::after, #about::after, #blog::after, #login::after  {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(32, 255, 143);  /* Underline color effect */
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  
-  #home:hover::after, #about:hover::after, #blog:hover:after, #login:hover:after  {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
+
+#home,
+#about,
+#blog,
+#login {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+/* Navbar text hover effect */
+#home::after,
+#about::after,
+#blog::after,
+#login::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: yellow;  /* Underline color effect */
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+#home:hover::after,
+#about:hover::after,
+#blog:hover:after,
+#login:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 
 #notesApp:hover {
-  color:rgb(32, 255, 143);
+  color: yellow;
+}
+
+/* lockScreen.js css */
+#unlock:hover {
+  background-color: red;
+  border: 2px solid red;
+}
+/* login.js css */
+form {
+  padding-top: 43px;
+}
+/* Styling for hamburger menu option */
+
+/* HamburgerMenu.css */
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: #333;  /* Adjust the color as needed */
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .line:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.open .line:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
