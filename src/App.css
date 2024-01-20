@@ -173,11 +173,6 @@ input[type=text]:hover {
   font-size: 20px;
 }
 
-/* login.js | placeholder */
-::placeholder {
-  color: rgba(13, 255, 0, 0.673);
-}
-
 /* login.js | btn btn-success | login button */
 #loginID:hover {
   background-color: red;
@@ -327,4 +322,5 @@ form {
   outline: 3px solid #007bff;
   border: 3px solid #007bff;
   cursor: pointer;
+  background-color: #a8c1dd;
 }
