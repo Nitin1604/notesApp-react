@@ -2,61 +2,145 @@ import NavigationComponent from "./Navigation";
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-const Title = 'Getting OTP';
-
-const HomeComponent = () => {
-   
+const Title = 'Notes Blog';
+const myStyle = {
+    backgroundImage:
+        "url('https://source.unsplash.com/random?wallpapers')" ,
+    height: '387px',
+    padding: '80px',
+    marginTop: -'23px',
+    fontSize: '50px',
+    backgroundRepeat: 'no-repeat',
+};
+const notesComponent = () => {
+    const backgroundImageUrl = 'Carousel1.jpg'; // Replace with your image URL
     return (
         <>
             <Helmet>
                 <title>{Title}</title>
             </Helmet>
-            <div id="HomeComponent">
+
+
+            <div id="notesComponent">
                 <NavigationComponent />
-
                 <div className="content">
-                    <div className="container my-3">
-                        <form className="form-inline" >
-                            <div className="card">
-                                <img src='https://source.unsplash.com/random?wallpapers'
-                                    className="my-2 img" alt="Image not found" width="200" height="200" title="Enter your number to get otp"></img>
-                                <div className="card-body">
-                                    <h5 className="card-title">Getting OTP</h5>
-                                    <form action="">
+                    <div className="container">
+                        <div className="container">
+                            <header className="blog-header py-3">
+                                <div className="row flex-nowrap justify-content-between align-items-center">
+                                    <div className="col-4 pt-1">
+                                        <a className="subscribe" href="#">Subscribe</a>
+                                    </div>
+                                    <div className="col-4 text-center">
+                                        <a className="large" href="#">Large</a>
+                                    </div>
+                                    <div className="col-4 pt-1">
+                                        <a className="unsubscribe" href="#">Unsubscribe</a>
+                                    </div>
 
-                                        {/*<---------------- form-group for Name ---------------->*/}
-                                        <div className="form-group">
-                                            <label htmlFor="exampleInputContact" className="mx-2">Contact:</label>
-                                            <input type="text1" className="form-control" id="exampleInputContact" aria-describedby="contactHelp" placeholder="Enter your contact"/>
-                                        </div>
-                                        {/*<---------------- form-group for Name ---------------->*/}
+                                </div>
+                            </header>
 
-                                        {/*<---------------- form-group for OTP ---------------->*/}
-                                        <div className="form-group">
-                                            <label htmlFor="exampleInputOTP" className="my-3 mx-3">OTP:</label>
-                                            <input type="text2" className="form-control" id="exampleInputOTP" placeholder="Enter OTP" />
-                                        </div>
-                                        {/*<---------------- form-group for OTP ---------------->*/}
-
-                                         {/* <------------ Verifying OTP starting ------------>  */}
-                                        <button type="submit" className="btn btn-info my-2">Verify OTP</button> 
-                                         {/* <------------ Verifying OTP ending ------------>  */}
-
-                                        {/* <------------ Resend OTP starting ------------>  */}
-                                        <button type="submit" className="btn btn-danger my-2 mx-2">Resend OTP</button>  
-                                        {/* <------------ Resend OTP ending ------------>  */}
-
-                                    </form>
+                            <div className="container my-4">
+                                <div className="text-white rounded">
+                                    <div className="px-0" style={myStyle}>
+                                        <h1 className="display-4 font-italic">What are the features of NotesApp?</h1>
+                                        <p className="lead my-3">It can add the notes, edit the notes , delete the notes and lock the notes such that no one can access the notes when trying to open the notes.</p>
+                                        
+                                    </div>
                                 </div>
                             </div>
-                        </form>
+                        </div>
+
+                        <main role="main" className="container">
+                            <div className="row">
+                                <div className="col-md-8 blog-main">
+                                    <h3 className="pb-3 mb-4 font-italic border-bottom">
+                                        From the NotesApp
+                                    </h3>
+
+                                    <div className="blog-post">
+                                        <h2 className="blog-post-title">Sample blog post for NotesApp</h2>
+                                        <p className="blog-post-meta">NotesApp created by <a href="#">Nitin</a></p>
+
+                                        <h3 className="text-success">Add images and photos</h3>
+                                        <b><p className="text-secondary">Upload images and photos as part of your notes. Notud allows you to mark them up with text, arrows or images.</p></b>
+                                        <h3 className="text-danger">Safe and secure </h3>
+                                        <blockquote>
+                                            <b><p className="text-success">Secure and encrypted notes and client information routinely backed up. GDPR Compliant.</p></b>
+                                        </blockquote>
+
+                                        <h3 className="text-info">Remote cloud access</h3>
+                                        <b><p className="text-secondary">Securely  access your important documents and client files wherever you are.</p></b>
+
+                                        <h2 className="text-danger">Integrated</h2>
+                                        <b><p className="text-primary">Integrate Notud with Xero or Zapier to simplify your workflow and automate your business tasks.</p></b>
+
+                                        <h2 className="text-success">Membership support</h2>
+                                        <b><p className="text-info">Ongoing support and webinars to help you find a solution when you need one.</p>
+                                        </b>
+
+                                        <h2 className="text-secondary">Multi-device</h2>
+                                        <b><p className="text-success">Access your notes on any device - Apple, Android or Windows - with an active internet connection. No need to download or install an app!</p></b>
+                                    </div>
+
+                                    <div className="blog-post">
+                                        <h2 className="blog-post-title text-danger">Get more out of your NOTES with AI</h2>
+
+                                        <b><p className="text-success">With AI we can OCR your handwriting and provide a meaningful summary</p></b>
+                                        <blockquote>
+                                        <b><p className="text-info">Along with the summary, we can also provide a list of action items. All at your fingertips.</p>
+                                        </b>
+                                        </blockquote>
+                                        <b><p className="text-primary">The perfect easy to use addition to my Xero client database. I can make notes, draw notes and ensure everything is attached to their client file for compliance. A great addition as we continue to transition to a paperless office. So easy to setup and use. </p></b>
+                                    </div>
+
+
+
+                                    <nav className="blog-pagination">
+                                        <a className="btn btn-outline-primary mx-2" href="#">Editing</a>
+                                        <a className="btn btn-outline-danger" href="#">Deleting</a>
+                                        <a className="btn btn-outline-info mx-2" href="#">Adding</a>
+                                    </nav>
+
+                                </div>
+
+                                <aside className="col-md-4 blog-sidebar">
+                                    <div className="p-3 mb-3 bg-light rounded">
+                                        <h4 className="font-italic">About</h4>
+                                        <p className="mb-0">Editing, deleting , adding the notes are the features included in notesapp.</p>
+                                    </div>
+
+
+
+                                    <div className="p-3">
+                                        <h4 className="font-italic">Social Media Handle</h4>
+                                        <ol className="list-unstyled">
+                                            <li><a href="#">GitHub</a></li>
+                                            <li><a href="#">LinkedIn</a></li>
+                                            <li><a href="#">YouTube</a></li>
+                                        </ol>
+                                    </div>
+                                </aside>
+
+                            </div>
+
+                        </main>
+
+                        <footer className="blog-footer my-3">
+                            <p className="content">Explore more components of Bootstrap on this site: <a href="https://getbootstrap.com/">Bootstrap.</a></p>
+                            <p>
+                                <a href="#" className="btn btn-info">Back to top</a>
+                            </p>
+                        </footer>
                     </div>
                 </div>
             </div>
+
 
         </>
 
     )
 }
 
-export default HomeComponent;
+export default notesComponent;

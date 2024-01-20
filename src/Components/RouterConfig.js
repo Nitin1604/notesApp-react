@@ -3,7 +3,6 @@ import { Route, BrowserRouter, Routes } from "react-router-dom"; // This is the 
 import LoginComponent from "./login";
 import HomeComponent from "./home";
 import AboutComponent from "./About";
-import NotesComponent from "./notesBlog";
 import LockManager from "./lockScreen";
 import React from 'react';
 
@@ -18,7 +17,6 @@ const RouterConfig = () => {
                     <Route exact path='/login' element={< LoginComponent/>} />  
                     <Route exact path='/home' element={< HomeComponent />} />      
                     <Route exact path='/about' element={< AboutComponent />} />      
-                    <Route exact path='/notesBlog' element={< NotesComponent />} />  
                 </Routes>
             </BrowserRouter>
         </div>
