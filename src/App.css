@@ -323,6 +323,8 @@ form {
   font-weight: bold;
 }
 
-#name:hover {
-  color: red;
+.inputOTP:hover {
+  outline: 3px solid #007bff;
+  border: 3px solid #007bff;
+  cursor: pointer;
 }
