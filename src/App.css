@@ -218,7 +218,7 @@ div a {
   color: black;
 }
 
-/* Navigation.js css */
+/* Navigation.js css start here */
 #home:hover,
 #about:hover,
 #blog:hover,
@@ -235,11 +235,11 @@ div a {
   position: relative;
   color: white;
 }
+/* Navigation.js css ends here */
 
-/* Navbar text hover effect */
+/* Navbar text hover effect start here */
 #home::after,
 #about::after,
-#blog::after,
 #login::after {
   content: '';
   position: absolute;
@@ -255,7 +255,6 @@ div a {
 
 #home:hover::after,
 #about:hover::after,
-#blog:hover:after,
 #login:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
@@ -264,13 +263,17 @@ div a {
 #notesApp:hover {
   color: yellow;
 }
+/* Navbar text hover effect ends here */
 
-/* lockScreen.js css */
+/* lockScreen.js css start here*/
 #unlock:hover {
   background-color: red;
   border: 2px solid red;
 }
-/* login.js css */
+/* lockScreen.js css ends here*/
+
+/* login.js css start here*/
 form {
   padding-top: 43px;
 }
+/* login.js css ends here*/
