@@ -1,4 +1,4 @@
-import NavigationComponent from "./Navigation"; 
+import NavigationComponent from "./Navigation";
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
@@ -14,6 +14,8 @@ const AboutComponent = () => {
             <div id="AboutComponent">
                 <NavigationComponent />
                 <div className="content" >
+
+                    {/* NotesApp Heading , Description , Editing , Deleting and Adding Button start here */}
                     <div className="position-relative p-3 p-md-5 m-md-3 text-center" >
                         <div className="col-md-5 p-lg-5 mx-auto my-5">
                             <h1 className="display-4 font-weight-normal text-danger">NotesApp</h1>
@@ -57,75 +59,113 @@ const AboutComponent = () => {
                         <div className="product-device box-shadow d-none d-md-block"></div>
                         <div className="product-device product-device-2 box-shadow d-none d-md-block"></div>
                     </div>
+                    {/* NotesApp Heading , Description , Editing , Deleting and Adding Button ends here */}
 
+                    {/* Row 1 Content start here  */}
                     <div className="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
                         <div className="bg-secondary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+
+                            {/* Editing the notes start here */}
                             <div className="my-3 py-3">
                                 <h2 className="display-5">Editing the notes</h2>
                                 <p className="lead">You can edit the notes.</p>
                             </div>
+                            {/* Editing the notes ends here */}
                             <div className="bg-light box-shadow mx-auto"  ></div>
                         </div>
                         <div className="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+
+                            {/* Deleting the notes start here */}
                             <div className="my-3 p-3">
                                 <h2 className="display-5">Deleting the notes</h2>
                                 <p className="lead">You can also the notes.</p>
                             </div>
+                            {/* Deleting the notes ends here */}
+
                             <div className="bg-dark box-shadow mx-auto"  ></div>
                         </div>
                     </div>
+                    {/* Row 1 Content ends here  */}
 
+                    {/* Row 2 Content start here  */}
                     <div className="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
                         <div className="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+
+                            {/* Inserting the notes start here */}
                             <div className="my-3 p-3">
                                 <h2 className="display-5">Inserting the notes</h2>
                                 <p className="lead">You can insert the notes</p>
                             </div>
+                            {/* Inserting the notes ends here */}
+
                             <div className="bg-dark box-shadow mx-auto"  ></div>
                         </div>
                         <div className="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+
+                            {/* Mark the notes as read start here */}
                             <div className="my-3 py-3">
                                 <h2 className="display-5">Mark the notes as read</h2>
                                 <p className="lead">Notes can mark as read</p>
                             </div>
+                            {/* Mark the notes as read ends here */}
                             <div className="bg-light box-shadow mx-auto"  ></div>
                         </div>
                     </div>
+                    {/* Row 2 Content start here  */}
 
+                    {/* Row 3 Content start here  */}
                     <div className="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
                         <div className="bg-success mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+
+                            {/* Mark the notes as unread start here */}
                             <div className="my-3 p-3">
                                 <h2 className="display-5">Mark the notes as unread</h2>
                                 <p className="lead">Notes can be mark as unread</p>
                             </div>
+                            {/* Mark the notes as unread ends here */}
+
                             <div className="bg-white box-shadow mx-auto"  ></div>
                         </div>
                         <div className="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+
+                            {/* Why notes are marked as unread? start here */}
                             <div className="my-3 py-3">
                                 <h2 className="display-5">Why notes are marked as unread?</h2>
                                 <p className="lead">To inform the user that notes are still left to read</p>
                             </div>
+                            {/* Why notes are marked as unread? ends here */}
                             <div className="bg-white box-shadow mx-auto"  ></div>
                         </div>
                     </div>
+                    {/* Row 3 Content ends here  */}
 
+                    {/* Row 4 Content start here  */}
                     <div className="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
                         <div className="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+
+                            {/* Why notes are marked as read? start here */}
                             <div className="my-3 p-3">
                                 <h2 className="display-5">Why notes are marked as read?</h2>
                                 <p className="lead">To inform the user the notes are read</p>
                             </div>
+                            {/* Why notes are marked as read? ends here */}
+
                             <div className="bg-white box-shadow mx-auto"  ></div>
                         </div>
                         <div className="bg-danger mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+
+                            {/* Adding the notes start here */}
                             <div className="my-3 py-3">
                                 <h2 className="display-5">Adding the notes</h2>
                                 <p className="lead">Adding the notes to perform the action.</p>
                             </div>
+                            {/* Adding the notes ends here */}
                             <div className="bg-white box-shadow mx-auto"  ></div>
                         </div>
                     </div>
+                    {/* Row 4 Content start here  */}
 
+                    {/* Footer Content start here */}
                     <footer className="container py-5">
                         <div className="row">
 
@@ -174,6 +214,7 @@ const AboutComponent = () => {
 
                         <a className="btn btn-primary mx-2 my-2" title="Press to move up" href="#">Back to top</a>
                     </footer>
+                    {/* Footer Content ends here */}
 
                 </div>
             </div>
