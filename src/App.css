@@ -217,7 +217,8 @@ div a {
 #home:hover,
 #about:hover,
 #blog:hover,
-#login:hover {
+#login:hover,
+#otp:hover {
   color: yellow;
   position: relative;
 }
@@ -225,7 +226,8 @@ div a {
 #home,
 #about,
 #blog,
-#login {
+#login,
+#otp {
   display: inline-block;
   position: relative;
   color: white;
@@ -235,7 +237,8 @@ div a {
 /* Navbar text hover effect start here */
 #home::after,
 #about::after,
-#login::after {
+#login::after,
+#otp::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -250,7 +253,8 @@ div a {
 
 #home:hover::after,
 #about:hover::after,
-#login:hover:after {
+#login:hover:after,
+#otp:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
