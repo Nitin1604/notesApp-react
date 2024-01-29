@@ -24,7 +24,7 @@ const AboutComponent = () => {
                             <p>
 
                                 <a className="btn btn-danger mx-2" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" data-placement="top" title="Press to show the content of edit button">Editing</a>
-                                <button className="btn btn-success mx-2" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2" data-placement="top" title="Press to show the content of delete button">Deleting</button>
+                                <button className="btn btn-success mx-2 my-3" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2" data-placement="top" title="Press to show the content of delete button">Deleting</button>
 
                                 <button className="btn btn-primary mx-2" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3" data-placement="top" title="Press to show the content of add button">Adding</button>
 
