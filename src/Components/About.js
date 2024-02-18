@@ -19,14 +19,15 @@ const AboutComponent = () => {
                     <div className="position-relative p-3 p-md-5 m-md-3 text-center" >
                         <div className="col-md-5 p-lg-5 mx-auto my-5">
                             <h1 className="display-4 font-weight-normal text-danger">NotesApp</h1>
-                            <p className="lead font-weight-normal text-white mt-2 mb-3 btn btn-info" title="NotesApp have too much features">
+                            <p className="lead font-weight-normal text-white mt-2 mb-3 btn btn-dark" title="NotesApp have too much features">
                                 You can do anything with the NotesApp like editing , deleting the notes</p>
                             <p>
 
                                 <a className="btn btn-danger mx-2" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" data-placement="top" title="Press to show the content of edit button">Editing</a>
                                 <button className="btn btn-success mx-2 my-3" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2" data-placement="top" title="Press to show the content of delete button">Deleting</button>
 
-                                <button className="btn btn-primary mx-2" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3" data-placement="top" title="Press to show the content of add button">Adding</button>
+                                <button className="btn btn-info mx-2 my-3" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3" data-placement="top" title="Press to show the content of delete button">Adding</button>
+                              
 
 
 
@@ -49,7 +50,7 @@ const AboutComponent = () => {
 
                                 <div className="col">
                                     <div className="collapse multi-collapse" id="multiCollapseExample3">
-                                        <div className="card card-body text-primary">
+                                        <div className="card card-body text-info">
                                             User can add the notes.
                                         </div>
                                     </div>
