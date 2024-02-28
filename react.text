@@ -1,4 +1,4 @@
 node app.js --> This commands will start the server with some port assign to it.  
-Notes backend server started on http://localhost:8080
+Notes backend server started on http://localhost:8080 
 {fileName} backend server started on http://localhost:8080
 here fileName is Notes it may be any other fileName
