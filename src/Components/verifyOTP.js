@@ -1,4 +1,4 @@
-import NavigationComponent from "./Navigation";
+import NavigationComponent from "./Navigation"; 
 import React from 'react';
 import { useState } from "react"
 import otpLogo from './otpLogo.jpg';
