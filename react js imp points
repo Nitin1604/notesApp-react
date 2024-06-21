@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet';                                                                  
 
 const Title = 'The title you want to see in react app project';
- 
+  
 return (
         <>
             <Helmet>
